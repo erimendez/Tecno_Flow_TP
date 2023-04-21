@@ -1,0 +1,20 @@
+div {padding: 1%;
+}
+
+label{
+    color: rgb(89, 142, 211);
+}
+
+.container {
+    
+    background-color:rgb(219, 212, 204);
+    font-weight: 700;
+    border-radius: 3%;
+    margin: 5%;
+}
+
+input{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
