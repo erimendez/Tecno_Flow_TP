@@ -1,0 +1,21 @@
+#map {  
+    width: 700px;
+    height: 400px; 
+}
+
+.encabezado{
+    text-align: center;background-color: black;
+}
+
+.popupSucursal h3{    
+    
+    font: white; 
+}
+
+.contenedor_mapa{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative; 
+    text-align: center;
+}

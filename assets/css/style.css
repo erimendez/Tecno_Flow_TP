@@ -1,0 +1,74 @@
+
+:root{
+    padding: 0;
+    margin: 0;
+    --color1: #3996AD;
+    --color2: #f50056;
+    --color3: #00c4f5;
+    --color4: #f5E320;
+    --color5: #ADA75F;
+
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+h1{
+    
+        font-size: 25px;
+        padding: 1em 35px;
+        color: var(--color2);
+        display: block;
+    
+}
+        
+        .slider-container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+          }
+          
+          .slider-container img {
+            flex: 0 0 100%;
+            width: 100%;
+            object-fit: cover;
+            scroll-snap-align: center;
+          }
+    
+nav {
+    padding: 2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: var(--color4);
+  }
+  nav li a {
+    color: var(--color1);
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+    font-size: 25px;
+  }
+  nav li a:hover {
+    background: var(--color2);
+    color: white;
+  }
+  @media screen and (min-width: 480px) {
+    nav ul {
+      display: flex;
+      flex-wrap:wrap;
+    
+    }
+    
+     nav li{
+   
+    flex-grow:1; 
+    text-align:center;
+ 
+            }
+        }
