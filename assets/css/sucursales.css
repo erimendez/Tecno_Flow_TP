@@ -1,6 +1,6 @@
 #map {  
-    width: 700px;
-    height: 400px; 
+    width: 80%;
+    height: 500px; 
 }
 
 .encabezado{
@@ -12,10 +12,34 @@
     font: white; 
 }
 
-.contenedor_mapa{
-    width: 100%;
-    max-width: 800px;
+.contenedor_mapa{ 
+    display: flex;
+    /* max-width: 100%; */
+    width:100%;
+    height:auto;
     margin: auto;
-    position: relative; 
-    text-align: center;
+    justify-content: center;
+    text-align: center; 
 }
+
+.contenedor_sucursales{
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor_item {
+  display: flex;
+  justify-content: space-between;  
+}
+      
+
+.form-group{
+  display:flex;
+  width:100%;
+  padding: 5px;
+}
+
+.form-group label{ 
+  padding: 5px;
+}
+

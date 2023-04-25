@@ -72,3 +72,13 @@ nav {
  
             }
         }
+
+button{
+  background-color: var(--color3);
+  font-size: 16px;
+  border: none;
+  color: white;
+  padding: 8px 16px; 
+  cursor: pointer;
+  border-radius: 4px;
+}
