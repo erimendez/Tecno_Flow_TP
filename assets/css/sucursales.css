@@ -4,7 +4,9 @@
 }
 
 .encabezado{
-    text-align: center;background-color: black;
+    text-align: center;
+    color: white;
+    background-color: #00c4f5;
 }
 
 .popupSucursal h3{    
