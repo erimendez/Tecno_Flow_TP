@@ -1,0 +1,135 @@
+:root{
+    padding: 0;
+    margin: 0;
+    --color1: #3996AD;
+    --color2: #f50056;
+    --color3: #00c4f5;
+    --color4: #f5E320;
+    --color5: #ADA75F;
+
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+h1{
+    
+        font-size: 25px;
+        padding: 1em 35px;
+        color: var(--color2);
+        display: block;
+    
+}
+
+nav {
+    padding: 2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: var(--color4);
+  }
+  nav li a {
+    color: var(--color1);
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+    font-size: 25px;
+  }
+  nav li a:hover {
+    background: var(--color2);
+    color: white;
+  }
+  @media screen and (min-width: 480px) {
+    nav ul {
+      display: flex;
+      flex-wrap:wrap;
+    
+    }
+    
+     nav li{
+   
+    flex-grow:1; 
+    text-align:center;
+ 
+            }
+        }
+
+
+.questions{
+    text-align: center;
+}
+
+.questions_container{
+    display: grid;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    
+}
+
+.questions_padding{
+    padding: 0;
+    border: 1px solid #5454d4;
+    border-radius: 6px;
+}
+
+.questions_answer{
+    padding: 0 30px 0;
+
+}
+
+.questions_title{
+    display: flex;
+    font-size: 20px;
+    padding: 30px 0 30px;
+    cursor: pointer;
+    font-family: Rajdhani, sans-serif;
+    color: var(--color2);
+}
+
+.questions_arrow{
+    border-radius: 50%;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-left: 10px;
+}
+
+.questions_show{
+    text-align: left;
+    font-family: Confortaa, cursive;
+    color: var(--color1);
+}
+
+.questions_img{
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+
+.prop_img{
+    height:300px;
+    width: 50%;
+    padding: 0 50px 0;
+
+}
+
+
+
+.redsoc{
+    color: black;
+    font-size: 1.0vw;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
