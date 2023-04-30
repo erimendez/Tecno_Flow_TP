@@ -23,29 +23,31 @@
       <body> 
         <header id="idheader"></header>
         <main>
-         <h1>Sucursales</h1>
-         <div class="contenedor_mapa">
-            <form>
-              <label for="provincia">Provincia:</label>
-              <select id="provincia">
-              
-              </select>
-              <label for="localidad">Localidad:</label>
-              <select id="localidad">
-              
-              </select>
-              <button type="button" onclick="buscarSucursales()">Buscar</button>
-            </form>
+          <h1>Sucursales</h1>         
+          <div class=contenedor_sucursales>
+            <div class="contenedor_item" >
+                  <div class="form-group">
+                      <label for="provincia">Provincia:</label>
+                      <select id="provincia"></select>
+                  </div>
+                <div class="form-group">
+                      <label for="localidad">Localidad:</label>
+                      <select id="localidad"></select>
+                  </div>
+                  <button type="button" onclick="buscarSucursales()">Buscar</button>
+            </div>            
+          </div>
 
-            <br>
+          <br>
+          <div class="contenedor_mapa">
             <div id="map"></div>
           </div>
 
-         </main>
-
+        </main>
       
         <!-- fontawesome -->
         <script src="assets/js/all.min.js"></script> 
+        <!-- mapa -->
         <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
         <script src="assets/js/scripts.js"></script>
         <script src="assets/js/sucursales.js"></script>

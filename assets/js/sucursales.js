@@ -175,12 +175,18 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 30
 }).addTo(map);
 
+var iconoMapa = new L.Icon({
+  iconUrl: './assets/media\\img/almacenar.png',
+  iconSize: [32, 32],
+  iconAnchor: [25, 25]  //punto del icono que corresponde a la ubicación del marcador.
+});
+
 L.control.scale().addTo(map);
 
 function mostrarSucursales(){
   for (var i = 0; i < sucursales.length; i++) {
     let localidad = localidades.find(localidad => localidad.idLocalidad == sucursales[i].idLocalidad);
-    L.marker([sucursales[i].sucLatitud, sucursales[i].sucLongitud]).addTo(map)
+    L.marker([sucursales[i].sucLatitud, sucursales[i].sucLongitud],{icon: iconoMapa}).addTo(map)
     .bindPopup('<div class="popupSucursal"><div class="encabezado"><h3><strong>'+ sucursales[i].direccion +'</strong></h3></div>'
     +'<p><i class="fa-solid fa-location-dot"></i>   ' + localidad.nombre  + '</p>'
     +'<p><i class="fa-solid fa-clock"></i>   '+ sucursales[i].horarios +'</p><hr />'
