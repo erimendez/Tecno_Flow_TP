@@ -6,7 +6,9 @@
   --color2: blue;
   --color3: pink;
   --color4: orange;
-
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Rajdhani', sans-serif;
+  
 }
 
 .contenedor{
@@ -92,7 +94,7 @@ h1{
   padding: 10px;
   margin: 0;
   width: 100%;
- justify-content:center;
+  justify-content:center;
   background-color: #c0392b;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -104,6 +106,8 @@ h1{
   padding: 0;
   margin: 0;
   background-color: aqua;
+  flex-wrap: wrap;
+  text-align: center;
   
 }
 .header nav li{
@@ -115,10 +119,10 @@ h1{
   
   display: block;
   background:#c0392b;
-color:#fff;
-text-align: center;
-text-decoration: none;
-padding:1rem;
+  color:#fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 2rem;
   font-size: 25px;
 }
 
