@@ -19,7 +19,7 @@
 .contenedor{
   margin: 0 auto;
   background-color: beige;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -132,12 +132,6 @@ h1{
   transition:all 700ms cubic-bezier(1,0,0,1);
   
 }
-  
-
-
-
-
-
   /* display: block;
   background:#c0392b;
   color:#fff;
