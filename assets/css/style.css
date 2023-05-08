@@ -6,6 +6,12 @@
   --color2: blue;
   --color3: pink;
   --color4: orange;
+  --facebook:  #3b5999;
+  --instagram: #e4405f;
+  --twitter: #55acee;
+  --pinterest: #bd081c;
+  --linkedin: #007785; 
+
   font-family: 'Comfortaa', cursive;
   font-family: 'Rajdhani', sans-serif;
   
@@ -294,17 +300,82 @@ vertical-align: top;
 
 .main .api_productos{
   display: flex;
+
+ 
+}
+.contenedorbuscador{
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenedorbuscador .buscador{
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.contenedorbuscador .buscador input{
+  
+    background: rgb(6, 31, 78);
+    box-shadow: inset 1px 1px 1px white;
+    color: white;
+    border: none;
+    padding: 6px 40px 6px 6px ;
+    width: 25vw;
+
 }
 
-button{
-  background-color: var(--color3);
-  font-size: 16px;
-  border: none;
-  color: white;
-  padding: 8px 16px; 
+.contenedorbuscador .lupa{
+  padding: 5px;
+  border: 1px solid green;
   cursor: pointer;
-  border-radius: 4px;
+  margin: 10px;
+  box-shadow: inset 1px 1px 1px rgb(127, 241, 127);
 }
+
+
+.header nav{
+  display: flex;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+ justify-content:center;
+  background-color: #a8736d;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  flex-wrap: wrap;
+}
+
+.header nav ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  /*background: var(--color4);*/
+  
+}
+.header nav li{
+  list-style: none;
+  
+}
+
+.header nav a{
+  color: rgb(209, 205, 205);
+  display: block;
+  background:#c0392b;
+text-align: center;
+text-decoration: none;
+padding:1rem;
+  font-size: 25px;
+  border-radius: 15%;
+  margin: 5% 5% 2% 5%;
+  transition:all 700ms cubic-bezier(1,0,0,1);
+}
+
+.header nav a:hover{
+  background-color: var(--color3);
+  color: white;
+  box-shadow: 8px 8px 8px #999;
+  transform: translate(-5px, -5px);
+}
+
 
 
 .questions{
@@ -370,13 +441,6 @@ button{
 
 }
 
-:root{
-  --facebook:  #3b5999;
-  --instagram: #e4405f;
-  --twitter: #55acee;
-  --pinterest: #bd081c;
-  --linkedin: #007785; 
-}
 
 
 .redes-container{
