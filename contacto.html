@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,47 +13,73 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style_contacto.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <title>Contacto</title>
 </head>
+
 <body>
     <div class="contenedorheader">
         <header class="header">
         </header>
-    <div class="container">
+    </div>
+    <div class="container_contacto">
         
-            <form action="https://formsubmit.co/ebcffc9a6331648fe9e11f231b37b9a5" method="POST">
-                <div class="col-md-4 mx-auto">
-                    <label for="Nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" name="name">
+        <form action="https://formsubmit.co/ebcffc9a6331648fe9e11f231b37b9a5" method="POST" class="col mt-3 g-3 needs-validation" novalidate>
+            <div class="col-md-4 mx-auto">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="name" required>
+                <div class="valid-feedback">
+                    Correcto
                 </div>
-
-                <div class="col-md-4 mx-auto">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="text" class="form-control" name="email">
+                <div class="invalid-feedback">
+                    Es necesario poner el nombre
                 </div>
+            </div>
 
-                <div class="col-md-6 mx-auto">
-                    <label for="subjet" class="form-label">Asunto</label>        
-                    <input type="text" class="form-control" name="subjet">
+            <div class="col-md-4 mx-auto">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" name="email" required>
+                <div class="valid-feedback">
+                    Correcto
                 </div>
-
-                <div class="col-md-6 mx-auto">
-                    <label for="comments" class="form-label">Mensaje</label>        
-                    <textarea name="comments" class="form-control" cols="15" rows="5"></textarea>
+                <div class="invalid-feedback">
+                    Es necesario poner el correo electrónico
                 </div>
+            </div>
 
-                
-                <div class="d-md-flex justify-content-md-end">
-                    <input type="submit" class="btn btn-primary" value="Enviar">
+            <div class="col-md-4 mx-auto">
+                <label for="subjet" class="form-label">Asunto</label>
+                <input type="text" class="form-control" name="subjet" required>
+                <div class="valid-feedback">
+                    Correcto
                 </div>
-                
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
-                <input type="hidden" name="_captcha" value="false">
+                <div class="invalid-feedback">
+                    Es necesario poner asunto del correo
+                </div>
+            </div>
 
-            </form>
-        
+            <div class="col-md-6 mx-auto">
+                <label for="comments" class="form-label">Mensaje</label>
+                <textarea name="comments" class="form-control" cols="15" rows="5" required></textarea>
+                <div class="valid-feedback">
+                    Correcto
+                </div>
+                <div class="invalid-feedback">
+                    Es necesario poner mensaje que desea enviar
+                </div>
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end gap-3">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+
+            <script src="./assets/js/contacto.js"></script>
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5502/contacto.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
     </div>
     <footer class="footer"></footer>
     <script src="./assets/js/nav_footer.js"></script>
 </body>
+
 </html>

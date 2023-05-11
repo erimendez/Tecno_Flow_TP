@@ -57,20 +57,18 @@ h1{
   width: 70%;
   padding: 0.5rem;
   width: fit-content;
-  
 }
 
 .header .texto{
-
   display: flex;
   justify-content: center;
- 
 }
 
 .contenedorbuscador{
   display: flex;
   flex-wrap: wrap;
 }
+
 .contenedorbuscador .buscador{
   display: flex;
   padding: 10px;
@@ -120,6 +118,7 @@ h1{
 }
 
 nav > ul{
+  display:flex;
   height: 100%;
   display: flex;
 }
@@ -145,6 +144,7 @@ nav > ul > li > a{
 
 nav > ul > li > a:hover{
   transform: scale(1.1);
+  color:#fff;
   background: #0074c7;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
@@ -207,6 +207,7 @@ nav ul li ul a:hover{
 /*ELEMENTOS RESPONSIVOS*/
 
 .icon__menu{
+  visibility: hidden;
   font-size: 26px;
   color: white;
   cursor: pointer;
@@ -272,6 +273,7 @@ nav ul li ul a:hover{
     display: block;
   }
   .icon__menu{
+    visibility: visible;
     display: flex;
   }
   #check__menu:checked ~ nav > ul{
