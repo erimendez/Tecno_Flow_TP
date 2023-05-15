@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/sucursales.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/sucursales.css">
 </head>
 <title>Sucursales</title>
+
 <body>
-        
-  <div class="contenedorheader">
-    <header class="header">
-    </header>
-       
-        
-        <main>
-          <h1>Sucursales</h1>         
-          <div class=contenedor_sucursales>
-            <div class="contenedor_item" >
-                  <div class="form-group">
-                      <label for="provincia">Provincia:</label>
-                      <select id="provincia"></select>
-                  </div>
-                <div class="form-group">
-                      <label for="localidad">Localidad:</label>
-                      <select id="localidad"></select>
-                  </div>
-                  <button type="button" onclick="buscarSucursales()">Buscar</button>
-            </div>            
+
+  <header id="idheader"></header>
+    <main>
+      <h1>Sucursales</h1>
+      <div class=contenedor_sucursales>
+        <div class="contenedor_item">
+          <div class="form-group">
+            <label for="provincia">Provincia:</label>
+            <select id="provincia"></select>
           </div>
-
-          <br>
-          <div class="contenedor_mapa">
-            <div id="map"></div>
+          <div class="form-group">
+            <label for="localidad">Localidad:</label>
+            <select id="localidad"></select>
           </div>
+          <button type="button" onclick="buscarSucursales()">Buscar</button>
+        </div>
+      </div>
 
-        </main>
-      
-        <!-- fontawesome -->
-        <script src="assets/js/all.min.js"></script> 
-        <!-- mapa -->
-       
-        <script src="./assets/js/scripts.js"></script>
-        <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
-  
-        <script src="assets/js/sucursales.js"></script>
+      <br>
+      <div class="contenedor_mapa">
+        <div id="map"></div>
+      </div>
 
-      
-    </body>
-    </html>
-  
+    </main>
+
+    <!-- fontawesome -->
+    <script src="assets/js/all.min.js"></script>
+    <!-- mapa -->
+
+    <script src="./assets/js/scripts.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
+    <script src="assets/js/sucursales.js"></script>
+
+
+</body>
+
+</html>

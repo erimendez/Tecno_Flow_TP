@@ -1,10 +1,13 @@
+
 header nav  ul  li  a{
-    padding: 5px 25px 5px 25px;   
+    padding: 5px 10px 5px 10px;
+    height: 70%;
+    margin-top: 10px;
 }
 
-header nav > ul > li:hover > ul{
+/*header nav > ul > li:hover > ul{
     top: 50px;
-}
+}*/
 
 .container_contacto {
     color: rgb(89, 142, 211);
