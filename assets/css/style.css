@@ -42,8 +42,14 @@ body{
   background-color: var(--color4);
 }
 
+h1{
+ padding: 0 15px 0 ;
+} 
 
 
+/*------------------------*/
+/* Elementos del <header> */
+/*------------------------*/
 .header{
   align-items: center;
   justify-content:center;
@@ -51,10 +57,6 @@ body{
   display: flex;
   flex-wrap:wrap;
 }
-
-h1{
- padding: 0 15px 0 ;
-} 
 
 .header .logo img{
   width: 70%;
@@ -290,64 +292,18 @@ nav ul li ul a:hover{
 /*   Fin nav bar    */
 /*-------------------*/
 
-.main .promo{
-  text-align: center;
-  width: 100%;
-  padding: 10px 0 10px 0;
-  border: 1px solid palevioletred;
- 
-}
-
-.main .ofertas{
-  background-color: blue;
-  color:#fff;
-  width: 100%;
-  text-align: center;
-  
-}
-
-.promo .formasdepago{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:center
-}
-.promo .formasdepago .centradopromo{
-  padding: 5px; ;
-  text-align: center;
-  font-size: 15px;
- 
-}
 
 
-.promo .formasdepago .centradopromo2{
-  padding: 5px; ;
-  text-align: center;
-  font-size: 15px;
- 
-}
-.promo .formasdepago .centradopromo p{
-  margin: 0 0;
-
-}
-.promo .formasdepago .centradopromo2 p{
-  margin: 0 0;
-
-}
-
-.promo .formasdepago .separador{
-display: flex;
-flex-wrap: wrap;
-border-right: 2px solid green;
-height: 50px;
-margin: 0 10px;
-
-}
+/*--------------------------------*/
+/* Elementos del 1er section (Slider)*/
+/*--------------------------------*/
 
 .main{
   background-color: var(--color4);
   box-sizing: border-box;
 
 }
+
 .main .slider {
   display: block;
   width: 100%;
@@ -404,6 +360,77 @@ vertical-align: top;
 }
  
 
+
+/*--------------------------------*/
+/* Fin del 1er section */
+/*--------------------------------*/
+
+/*--------------------------------*/
+/* Elementos del 2do section */
+/*--------------------------------*/
+.main .promo{
+  text-align: center;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  border: 1px solid palevioletred;
+ 
+}
+
+.main .ofertas{
+  background-color: blue;
+  color:#fff;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.promo .formasdepago{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center
+}
+.promo .formasdepago .centradopromo{
+  padding: 5px; ;
+  text-align: center;
+  font-size: 15px;
+ 
+}
+
+
+.promo .formasdepago .centradopromo2{
+  padding: 5px; ;
+  text-align: center;
+  font-size: 15px;
+ 
+}
+.promo .formasdepago .centradopromo p{
+  margin: 0 0;
+
+}
+.promo .formasdepago .centradopromo2 p{
+  margin: 0 0;
+
+}
+
+.promo .formasdepago .separador{
+display: flex;
+flex-wrap: wrap;
+border-right: 2px solid green;
+height: 50px;
+margin: 0 10px;
+
+}
+
+/*--------------------------------*/
+/* Fin del 2do section */
+/*--------------------------------*/
+
+/*--------------------------------*/
+/* Elementos del 3er section */
+/*--------------------------------*/
+
+
+
 .main .contenedortira{
   width: 100%;
   display: flex;
@@ -452,9 +479,26 @@ vertical-align: top;
  
 }
 
+/*--------------------------------*/
+/* Fin del 3er section */
+/*--------------------------------*/
+
+/*--------------------------------*/
+/* Elementos del 4to section------*/
+/*--------------------------------*/
+
+
+
 .main .api_productos{
   display: flex;
 }
+
+/*--------------------------------*/
+/* Fin del 4to section------*/
+/*--------------------------------*/
+
+
+
 
 button{
   background-color: var(--color3);
@@ -466,6 +510,9 @@ button{
   border-radius: 4px;
 }
 
+/*--------------------------------*/
+/* Elementos del footer ( Comienzo)
+/*--------------------------------*/
 
 
 .redsoc{
@@ -535,3 +582,6 @@ button{
   text-align: center;
 }
 
+/*--------------------------------*/
+/* Fin del footer--------------- */
+/*--------------------------------*/
