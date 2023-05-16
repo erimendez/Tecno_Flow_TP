@@ -12,8 +12,10 @@
   --pinterest: #bd081c;
   --linkedin: #007785; 
 
+
   font-family: 'DM Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
+
 }
 
 .contenedor{
@@ -465,6 +467,14 @@ button{
 }
 
 
+
+.redsoc{
+  color: black;
+  font-size: 1.0vw;
+  text-align: center;
+
+}
+
 .redes-container{
   display: flex;
   height: 100vh;
@@ -523,6 +533,5 @@ button{
 }
 .paragraph{
   text-align: center;
-  color: var(--color1);
 }
 
