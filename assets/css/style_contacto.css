@@ -1,16 +1,20 @@
-div {
-    padding: 1%;
+
+header nav  ul  li  a{
+    padding: 5px 10px 5px 10px;
+    height: 70%;
+    margin-top: 10px;
 }
 
-label{
+/*header nav > ul > li:hover > ul{
+    top: 50px;
+}*/
+
+.container_contacto {
     color: rgb(89, 142, 211);
-}
-
-.container {
-    
     background-color:rgb(219, 212, 204);
     font-weight: 700;
     border-radius: 3%;
+    padding: 20px;
     margin: 5%;
 }
 

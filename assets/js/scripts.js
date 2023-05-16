@@ -16,27 +16,31 @@ let header = `
 <div >
 <h1> iconos lindos</h1>
 </div>
+<!--  Barra de NAVEGACION -->
+<div class="container_menu">
+  <div class="menu">
+    <input type="checkbox" id="check__menu">
+    <label id="#label__check" for="check__menu">
+      <i class="fas fa-bars icon__menu"></i>
+    </label>
 <nav>
 <ul>
+<!-- <li><a href="#">Nosotros</a></li> -->
 <li>
-<a href="#">Nosotros</a>
-</li></ul><ul><li>
-            <a href="#">Producto</a>
-            <ul>
-              <li><a href="">Submenu1</a></li>
-              <li><a href="">Submenu2</a></li>
-              <li><a href="">Submenu3</a></li>
-              <li><a href="">Submenu4</a></li>
-            </ul></li></ul><ul>
-            <li>
-              <a href="#">Acerca</a>
-            </li></ul><ul>
-        <li>
-            <a href="#">Sucursales</a>
-        </li></ul><ul>
-      <li>
-          <a href="#">Promociones</a>
-      </li>
-  </ul></nav></div>
+  <a href="index.html">Producto</a>
+  <ul>
+    <li><a href="#">Submenu1</a></li>
+    <li><a href="#">Submenu1</a></li>
+    <li><a href="#">Submenu1</a></li>
+    <li><a href="#">Submenu1</a></li>
+  </ul>
+</li>
+<li><a href="preg_Frec.html">FAQs</a></li>
+<li><a href="sucursales.html">Sucursales</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</div>
+</div>
 `
 document.getElementById("idheader").innerHTML = header
