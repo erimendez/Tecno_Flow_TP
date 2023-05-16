@@ -11,9 +11,9 @@
   --twitter: #55acee;
   --pinterest: #bd081c;
   --linkedin: #007785; 
-
   font-family: 'Comfortaa', cursive;
   font-family: 'Rajdhani', sans-serif;
+}
 
 .contenedor{
   margin: 0 auto;
@@ -464,6 +464,14 @@ button{
 }
 
 
+
+.redsoc{
+  color: black;
+  font-size: 1.0vw;
+  text-align: center;
+
+}
+
 .redes-container{
   display: flex;
   height: 100vh;
@@ -522,6 +530,5 @@ button{
 }
 .paragraph{
   text-align: center;
-  color: var(--color1);
 }
 
