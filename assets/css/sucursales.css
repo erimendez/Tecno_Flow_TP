@@ -1,3 +1,4 @@
+
 #map {  
     width: 80%;
     height: 500px; 
@@ -34,6 +35,16 @@
   justify-content: space-between;  
 }
       
+button{
+  background-color: blue;
+  font-size: 16px;
+  border: none;
+  color: white;
+  padding: 8px 16px; 
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 
 .form-group{
   display:flex;

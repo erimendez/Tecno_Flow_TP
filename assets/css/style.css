@@ -465,19 +465,11 @@ margin: 0 10px;
    
 }
 
-.mascara{
+ .mascara{
   height: 150px;
   width: 150px;
-  -webkit-mask-image: url(./media/img/forma2.svg);
-  mask-image: url(./media/img/forma2.svg);
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-position: center center;
-  mask-position: center center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
- 
-}
+  clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 80% 100%, 0 100%, 0% 80%, 0% 20%);
+} 
 
 /*--------------------------------*/
 /* Fin del 3er section */
@@ -496,19 +488,6 @@ margin: 0 10px;
 /*--------------------------------*/
 /* Fin del 4to section------*/
 /*--------------------------------*/
-
-
-
-
-button{
-  background-color: var(--color3);
-  font-size: 16px;
-  border: none;
-  color: white;
-  padding: 8px 16px; 
-  cursor: pointer;
-  border-radius: 4px;
-}
 
 /*--------------------------------*/
 /* Elementos del footer ( Comienzo)
