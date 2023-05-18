@@ -41,7 +41,7 @@ body{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: var(--color4);
+  background-color: white;
 }
 
 
@@ -52,13 +52,23 @@ body{
 .header{
   align-items: center;
   justify-content:center;
-  background-color: var(--color2);
+  background-color:#02577a;
   display: flex;
   flex-wrap:wrap;
 }
 
+.header .texto h1{
+
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  color: #02a9f7;
+
+
+}
 .header .logo img{
-  width: 70%;
+  width: 450px;
+  height: 150px;
   padding: 0.5rem;
   width: fit-content;
 }
@@ -126,7 +136,7 @@ body{
 .container_menu{
   width: 100%;
   height: 70px;
-  background: #023877;
+  background: #01303f;
   padding: 0px 20px;
 
 }
@@ -322,7 +332,7 @@ nav ul li ul a:hover{
 /*--------------------------------*/
 
 .contenedor .main{
-  background-color: var(--color4);
+  background-color: #d4f0fc;
   box-sizing: border-box;
 
 }
@@ -400,7 +410,7 @@ vertical-align: top;
   text-align: center;
   width: 100%;
   padding: 10px 0 10px 0;
-  border: 1px solid palevioletred;
+  
  
 }
 
@@ -448,7 +458,7 @@ vertical-align: top;
 .contenedor .promo .formasdepago .separador{
 display: flex;
 flex-wrap: wrap;
-border-right: 2px solid green;
+border-right: 2px solid #02577a;
 height: 50px;
 margin: 0 10px;
 
@@ -468,7 +478,7 @@ margin: 0 10px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(221, 38, 38);
+  background-color: #02a9f7;
   justify-content: center;
 
 }
@@ -571,10 +581,11 @@ margin: 0 10px;
    /* flex-wrap: wrap; */
    justify-content: space-around;
    align-items: center;
-   border: 1px solid rgb(3, 14, 78);
+   border: 1px solid #02577a;
    border-radius: 5%;
    width: 255px;
    box-sizing: border-box;
+   background-color: white;
  }
 
 
@@ -637,7 +648,7 @@ background-color: #3b5999;
 
 
 .redsoc{
-  color: black;
+  color: #01303f;
   font-size: 15px;
   text-align: center;
 
@@ -660,7 +671,7 @@ background-color: #3b5999;
 .redes-container ul li a{
   display: block;
   padding: 0 10px;
-  background: #333;
+  background:#01303f;
   color: #fff;
   line-height: 50px;
   font-size: 18px;
