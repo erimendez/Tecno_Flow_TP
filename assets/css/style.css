@@ -15,8 +15,10 @@
 
   font-family: 'DM Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
+  
 
 }
+
 
 .contenedor{
   margin: 0 auto;
@@ -31,7 +33,7 @@
 }
 
 .contenedor .contenedorheader{
-
+  width: 100%;
   display: block;
 } 
 
@@ -42,9 +44,6 @@ body{
   background-color: var(--color4);
 }
 
-h1{
- padding: 0 15px 0 ;
-} 
 
 
 /*------------------------*/
@@ -258,8 +257,8 @@ nav ul li ul a:hover{
   display: none;
 }
 
+ @media screen and (max-width:720px){ 
 
-@media screen and (max-width:720px){
   nav > ul {
     flex-direction:column;
     background-color:#023877 ;
@@ -322,13 +321,13 @@ nav ul li ul a:hover{
 /* Elementos del 1er section (Slider)*/
 /*--------------------------------*/
 
-.main{
+.contenedor .main{
   background-color: var(--color4);
   box-sizing: border-box;
 
 }
 
-.main .slider {
+.contenedor .main .slider {
   display: block;
   width: 100%;
  height: 300px;
@@ -338,7 +337,7 @@ nav ul li ul a:hover{
 
 }
 
-.main .slides {
+.contenedor .main .slides {
   padding: 0;
   width: 400%;
 display: flex;
@@ -350,38 +349,43 @@ animation-iteration-count: infinite;
 animation-timing-function: linear;
 }
 
-.main .slide {
+.contenedor .main .slide {
 width: 100%;
 list-style: none;
 }
 
-.main .slide img {
+.contenedor .main .slide .imgpc {
 width: 100%;
   height: 75%;
 vertical-align: top;
 }
 
-@media only screen and (min-width:480px) and (max-width:768px){
-  .main .slider, .main .slides , .main .slide img{
-          height: 100%;
-      }
+.contenedor .main .slide .imgcelu{
+  display: none;
 }
-
 
 
 @keyframes fotoslide {
-0%{margin-left: 0;}
-  20%{margin-left: 0;}
-  
-  25%{margin-left: -100%;}
-  45%{margin-left: -100%;}
-  
-  50%{margin-left: -200%;}
-  70%{margin-left: -200%;}
-  
-  75%{margin-left: -300%;}
-  100%{margin-left: -300%;}
+  0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+  }
+
+@media only screen and (max-width:480px) {
+
 }
+
+
+
+
  
 
 
@@ -392,7 +396,7 @@ vertical-align: top;
 /*--------------------------------*/
 /* Elementos del 2do section */
 /*--------------------------------*/
-.main .promo{
+.contenedor .main .promo{
   text-align: center;
   width: 100%;
   padding: 10px 0 10px 0;
@@ -400,20 +404,25 @@ vertical-align: top;
  
 }
 
-.main .ofertas{
+.contenedor .main .ofertas{
   background-color: blue;
   color:#fff;
   width: 100%;
   text-align: center;
   
 }
+.contenedor .ofertar h1{
+ display: block;
+ padding: 0 15px 0 ;
+} 
 
-.promo .formasdepago{
+
+.contenedor .promo .formasdepago{
   display: flex;
   flex-wrap: wrap;
   justify-content:center
 }
-.promo .formasdepago .centradopromo{
+.contenedor .promo .formasdepago .centradopromo{
   padding: 5px; ;
   text-align: center;
   font-size: 15px;
@@ -421,22 +430,22 @@ vertical-align: top;
 }
 
 
-.promo .formasdepago .centradopromo2{
+.contenedor .promo .formasdepago .centradopromo2{
   padding: 5px; ;
   text-align: center;
   font-size: 15px;
  
 }
-.promo .formasdepago .centradopromo p{
+.contenedor .promo .formasdepago .centradopromo p{
   margin: 0 0;
 
 }
-.promo .formasdepago .centradopromo2 p{
+.contenedor .promo .formasdepago .centradopromo2 p{
   margin: 0 0;
 
 }
 
-.promo .formasdepago .separador{
+.contenedor .promo .formasdepago .separador{
 display: flex;
 flex-wrap: wrap;
 border-right: 2px solid green;
@@ -455,7 +464,7 @@ margin: 0 10px;
 
 
 
-.main .contenedortira{
+.contenedor .main .contenedortira{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -464,7 +473,7 @@ margin: 0 10px;
 
 }
 
-.main .contenedortira .imagenesproductos{
+.contenedor .main .contenedortira .imagenesproductos{
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -475,7 +484,7 @@ margin: 0 10px;
 }
 
 
-.main .contenedortira .imagenesalinear{
+.contenedor .main .contenedortira .imagenesalinear{
   
   padding: 10px ;
   position: relative;
@@ -484,7 +493,7 @@ margin: 0 10px;
  
 }
 
-.main .contenedortira .imagenesalinear .imagenenlace{
+.contenedor .main .contenedortira .imagenesalinear .imagenenlace{
   text-align: center;
    
 }
@@ -503,10 +512,119 @@ margin: 0 10px;
 /* Elementos del 4to section------*/
 /*--------------------------------*/
 
+.contenedor .contenedorwrapper{
+  display: block;
+  width: 1100px;
+  margin: auto;
+  box-sizing: border-box;
+
+}
+
+.contenedor .contenedorwrapper .slider-wrapper img{
+
+  height: 50%;
+  width: fit-content;
+
+ 
+}
+
+.contenedor .contenedorwrapper .slider-wrapper h2{
+    padding: 0 10px 0 10px;
+}
+
+.contenedor .contenedorwrapper .slider-wrapper .slider-item a{
+  background-color: #2bc1cc;
+  color: rgba(0,0,0,1);
+  border-radius: 111px;
+  padding: 10px 15px;
 
 
-.main .api_productos{
-  display: flex;
+}
+
+
+.contenedor .contenedorwrapper .slider-wrapper {
+   width: 100%;
+   height: 420px;
+   list-style: none;
+   margin: 10px 0 10px 0;   
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center ; 
+   text-align: center;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   scroll-behavior: smooth;
+   gap: 5px;
+   box-sizing: border-box;
+   
+}
+.contenedor .contenedorerapper .slider-wrapper::-webkit-scrollbar{
+ display: none;
+}
+
+
+.contenedor .contenedorwrapper .slider-wrapper .slider-item{
+   box-shadow: 5px 5px 5px black;
+    flex: 0 0 auto;
+   padding: 0 0 20px 0;
+   height:410px;
+   /* flex-wrap: wrap; */
+   justify-content: space-around;
+   align-items: center;
+   border: 1px solid rgb(3, 14, 78);
+   border-radius: 5%;
+   width: 255px;
+   box-sizing: border-box;
+ }
+
+
+ .contenedor .contenedorwrapper .buttons  {
+ position: absolute;
+ top: 80%;
+ margin: 10px ;
+font-size: 35px;
+ cursor: pointer;
+ width: 50px;
+ text-align: center;
+ 
+}
+.contenedor .contenedorwrapper .left {
+
+ left: 250px;
+ 
+}    
+.contenedor .contenedorwrapper .right {
+ 
+ right: 250px;
+ 
+}   
+.contenedor .contenedorwrapper .buttons .left:hover {
+ background-color: red;
+ 
+}
+.contenedor .contenedorwrapper .buttons .right:hover {
+background-color: #3b5999;
+
+}
+
+
+@media only screen and (max-width:480px){
+  .contenedor  .contenedorwrapper .slider-wrapper{
+  
+         max-width: 500px;
+     }
+
+
+     .contenedor .contenedorwrapper .left {
+
+      left: 20px;
+      
+     }    
+     .contenedor .contenedorwrapper .right {
+      
+      right: 20px;
+      
+     }   
 }
 
 /*--------------------------------*/
@@ -520,7 +638,7 @@ margin: 0 10px;
 
 .redsoc{
   color: black;
-  font-size: 1.0vw;
+  font-size: 15px;
   text-align: center;
 
 }

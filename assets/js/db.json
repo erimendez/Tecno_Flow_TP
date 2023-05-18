@@ -1,0 +1,113 @@
+[
+    {
+        "id": "1",
+        "name": "samsung galaxy   s22",
+        "colours": "blanco",
+        "capacity": "250GB",
+        "price": "$284,999",
+        "img": "https://www.riiing.com.ar/wp-content/uploads/2022/03/2-11.jpg",
+        "url": "./productos.html#sgs22 ",
+        "null": "null"
+    },
+    {
+        "id": "2",
+        "name": "samsung galaxy   a13",
+        "colours": "negro",
+        "capacity": "128GB",
+        "price": "$82.999",
+        "img": "https://www.riiing.com.ar/wp-content/uploads/2022/05/9.jpg",
+        "url": "./productos.html#sga13",
+        "": ""
+    },
+    {
+        "id": "3",
+        "name": "samsung galaxy   a33 ",
+        "colours": "negro",
+        "capacity": "128GB",
+        "price": "$141.999",
+        "img": "https://www.riiing.com.ar/wp-content/uploads/2022/05/5-7-1024x1024.jpg",
+        "url": "./productos.html#sga33",
+        "": ""
+    },
+    {
+        "id": "4",
+        "name": "samsung galaxy   a23",
+        "colours": "negro",
+        "capacity": "128GB",
+        "price": "$104.999",
+        "img": "https://www.riiing.com.ar/wp-content/uploads/2022/05/3-17.jpg",
+        "url": "./productos.html#sga23",
+        "": ""
+    },
+    {
+        "id": "5",
+        "name": "samsung galaxy s20",
+        "colours": "azul",
+        "capacity": "128GB",
+        "price": "$189.999",
+        "img": "https://www.riiing.com.ar/wp-content/uploads/2021/12/2-8.jpg",
+        "url": "./productos.html#sgs20",
+        "": ""
+    },
+    {
+        "id": "6",
+        "name": "motorola    moto   e32",
+        "colours": "gris",
+        "capacity": "64GB",
+        "price": "$55.999",
+        "img": "https://www.riiing.com.ar/wp-content/uploads/2022/08/1-1.jpg",
+        "url": "./productos.html#me32",
+        "": ""
+    },
+    {
+        "id": "8",
+        "name": "motorola    moto   e13",
+        "colours": "negro",
+        "capacity": "64GB",
+        "price": "$42,999",
+        "img": "https://www.riiing.com.ar/wp-content/uploads/2023/04/e13.jpg",
+        "url": " ./productos.html#me13",
+        "": ""
+    },
+    {
+        "id": "9",
+        "name": "Motorola Moto G9 ",
+        "colours": "negro",
+        "capacity": "128GB",
+        "price": "$89,999",
+        "img": "https://www.riiing.com.ar/wp-content/uploads/2023/04/1-1.jpg",
+        "url": " ./productos.html#mg9",
+        "": ""
+    },
+    {
+        "id": "10",
+        "name": "Motorola Moto G32",
+        "colours": "negro",
+        "capacity": "128B",
+        "price": "$95,999",
+        "img": "https://www.riiing.com.ar/wp-content/uploads/2023/05/CELULAR-MOTOROLA-MOTO-G32-128GB-PLATA-SATINADO.jpg",
+        "url": "./productos.html#mg32 ",
+        "": ""
+    },
+    {
+        "id": "11",
+        "name": "Motorola Moto G42",
+        "colours": "negro",
+        "capacity": "128GB",
+        "price": "$98,999",
+        "img": "https://www.riiing.com.ar/wp-content/uploads/2023/01/1-8.jpg",
+        "url": " ./productos.html#mg42",
+        "": ""
+    },
+    {
+        "id": "12",
+        "name": "Motorola Moto E22",
+        "colours": "negro",
+        "capacity": "32GB",
+        "price": "$59,999",
+        "img": "https://www.riiing.com.ar/wp-content/uploads/2023/01/b-2.jpg",
+        "url": " ./productos.html#me22",
+        "": ""
+    }
+    
+]
