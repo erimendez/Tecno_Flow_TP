@@ -45,7 +45,6 @@ body{
 }
 
 
-
 /*------------------------*/
 /* Elementos del <header> */
 /*------------------------*/
@@ -57,15 +56,15 @@ body{
   flex-wrap:wrap;
 }
 
-.header .texto h1{
+.header, .texto, h1{
 
   font-family: 'Roboto', sans-serif;
   font-style: italic;
   font-size: 30px;
   color: #02a9f7;
 
-
 }
+
 .header .logo img{
   width: 450px;
   height: 150px;
@@ -240,6 +239,17 @@ nav ul li ul a:hover{
   padding-left: 30px;
   font-size: 14px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/*------------------------*/
+/* Título principal de cada página */
+/*------------------------*/
+.titulo{
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-style:normal;
+  color: var(--instagram);
+  text-align: center;
 }
 
 

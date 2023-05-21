@@ -1,6 +1,3 @@
-//var provincias = []; // arreglo para guardar la lista de provincias
-//var localidades = []; // arreglo para guardar la lista de localidades
-
 const localidades = [
   {
     "idLocalidad": 1,
@@ -72,99 +69,102 @@ const sucursales = [
     "idLocalidad": 1,
     "direccion": "Avellaneda 826",
     "telefono": "0291 4562075",
-    "horarios": "Lun a Vie 8:30 20:30",
+    "horarios": "Lun a Vie 8:30-20:30",
     "sucLatitud": -38.722925,
     "sucLongitud": -62.29
   },
   {
     "idLocalidad": 1,
     "direccion": "Av. Pringles 50",
-    "telefono": "0291 4562075",
-    "horarios": "Lun a Vie 8:30 20:30",
+    "telefono": "0291 4523741",
+    "horarios": "Lun a Vie 8:00-20:30",
     "sucLatitud": -38.715806018460015,
     "sucLongitud": -62.24428805845541
   },  
   {    
     "idLocalidad": 1,
     "direccion": "Av. Colón 80",
-    "telefono": "0291 4562075",
-    "horarios": "Lun a Vie 8:30 20:30",
+    "telefono": "0291 4538292",
+    "horarios": "Lun a Vie 8:30-20:30",
     "sucLatitud": -38.718805831121685,
     "sucLongitud": -62.26694380796718
   },
   {      
     "idLocalidad": 2,
     "direccion": "Av. 520 2800",
-    "telefono": "0291 4562075",
-    "horarios": "Lun a Vie 8:30 20:30",
+    "telefono": "0221 4794848",
+    "horarios": "Lun a Vie 8:30-20:30",
     "sucLatitud": -34.903385871851306,
     "sucLongitud": -57.9962685492786
   },
   {
     "idLocalidad": 2,
     "direccion": "Calle 513 3698",
-    "telefono": "0291 4562075",
-    "horarios": "Lun a Vie 8:30 20:30",
+    "telefono": "0221 4745574",
+    "horarios": "Lun a Vie 8:30-20:30",
     "sucLatitud": -34.89859784321391,
     "sucLongitud": -58.02777884344563
   },
   {
     "idLocalidad": 3,
     "direccion": "Av. Juan B. Justo 1360",
-    "telefono": "0291 4562075",
-    "horarios": "Lun a Vie 8:30 20:30",
+    "telefono": "0223 4808560",
+    "horarios": "Lun a Vie 8:30-20:30",
     "sucLatitud": -38.03149417797409,
     "sucLongitud": -57.55504082510899
   },
   {
     "idLocalidad": 4,
     "direccion": "Av Eduardo Bulnes 2368",
-    "telefono": "0291 4562075",
-    "horarios": "Lun a Vie 8:30 20:30",
+    "telefono": "0351 3642704",
+    "horarios": "Lun a Vie 8:30-20:30",
     "sucLatitud": -31.39528376985787,
     "sucLongitud": -64.15645242580864
   },
   {
     "idLocalidad": 5,
     "direccion": "Paso de los Andes 459",
-    "telefono": "0291 4562075",
-    "horarios": "Lun a Vie 8:30 20:30",
+    "telefono": "0358 4631760",
+    "horarios": "Lun a Vie 8:30-20:30",
     "sucLatitud": -33.14413250163415,
     "sucLongitud": -64.36196169878038
   },
   {
     "idLocalidad": 6,
     "direccion": "Roma 2459",
-    "telefono": "0291 4562075",
-    "horarios": "Lun a Vie 8:30 20:30",
+    "telefono": "03541 467175",
+    "horarios": "Lun a Vie 8:30-22:00",
     "sucLatitud": -31.415600632361773,
     "sucLongitud": -64.53024598840281
   },
   {
     "idLocalidad": 7,
     "direccion": "Laprida 3146",
-    "telefono": "0291 4562075",
-    "horarios": "Lun a Vie 8:30 20:30",
+    "telefono": "0341 4826478",
+    "horarios": "Lun a Vie 8:30-20:30",
     "sucLatitud": -32.97468531153638,
     "sucLongitud": -60.64130950737602
   },
   {
     "idLocalidad": 8,
     "direccion": "Av. Gral. Paz 4904",
-    "telefono": "0291 4562075",
-    "horarios": "Lun a Vie 8:30 20:30",
+    "telefono": "0342 4559203",
+    "horarios": "Lun a Vie 8:30-20:30",
     "sucLatitud": -31.62488677494047,
     "sucLongitud": -60.688952045220276
   },
   {
     "idLocalidad": 9,
     "direccion": "Pasaje Gatti 2529",
-    "telefono": "0291 4562075",
-    "horarios": "Lun a Vie 8:30 20:30",
+    "telefono": "03462 423266",
+    "horarios": "Lun a Vie 8:30-20:30",
     "sucLatitud": -33.73335021325108,
     "sucLongitud": -61.98337837284383
   }
   ]
+
+//---------- inicialización del mapa, se utiliza la librería de javascript Leaflet
+//---------- https://leafletjs.com/  
 
 var map = L.map('map').
 setView([-35, -63], 
@@ -176,16 +176,22 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var iconoMapa = new L.Icon({
-  iconUrl: './assets/media\\img/almacenar.png',
+  iconUrl: './assets/media\\img/tecnoflow(2).png',
   iconSize: [32, 32],
   iconAnchor: [25, 25]  //punto del icono que corresponde a la ubicación del marcador.
 });
 
 L.control.scale().addTo(map);
+//------------------------
 
+//función que recorre la constante 'sucursales' y agrega un marcador en el mapa según sus coordenadas
 function mostrarSucursales(){
-  for (var i = 0; i < sucursales.length; i++) {
+  for (let i = 0; i < sucursales.length; i++) {
+    //se busca dentro de la constante 'localidades' el id de la localidad que coincide con el id de localidad de la sucursal actual
+    //para luego obtener sus datos, en este caso el nombre 
     let localidad = localidades.find(localidad => localidad.idLocalidad == sucursales[i].idLocalidad);
+    
+    //con funciones de la librería leaflet se crea el marcador de sucursal en el mapa y una ventana pop up con sus datos
     L.marker([sucursales[i].sucLatitud, sucursales[i].sucLongitud],{icon: iconoMapa}).addTo(map)
     .bindPopup('<div class="popupSucursal"><div class="encabezado"><h3><strong>'+ sucursales[i].direccion +'</strong></h3></div>'
     +'<p><i class="fa-solid fa-location-dot"></i>   ' + localidad.nombre  + '</p>'
@@ -196,117 +202,56 @@ function mostrarSucursales(){
 
 }
 
-// cargar los selectores al cargar la página
-// función para cargar el archivo JSON y llenar los selectores
+//función que llena el selector de provincias al cargar la página
 document.addEventListener("DOMContentLoaded", function () {
-  var selectorProvincias = document.getElementById("provincia");
-  // llenar el selector de provincias
-  for (var i = 0; i < localidades.length; i++) {
-    if (selectorProvincias.namedItem(localidades[i].provincia)==null) { //.contains(localidades[i].provincia)){
-      var opcion = document.createElement("option");
+  let selectorProvincias = document.getElementById("provincia");
+  
+  for (let i = 0; i < localidades.length; i++) {
+    //se recorre la constante 'localidades', si la provincia a la que pertenece
+    //no existe en el selector de provincias se agrega al mismo
+    if (selectorProvincias.namedItem(localidades[i].provincia)==null) { 
+      let opcion = document.createElement("option");
       opcion.value=i;
       opcion.id = localidades[i].provincia;
       opcion.text = localidades[i].provincia;
       selectorProvincias.add(opcion);
-    }
-    
+    }    
   }
 
   actualizarLocalidades();
-
   mostrarSucursales();
-  //obtenerCoordenadas();
-
+  
 });
-
-  /*
-  fetch('./assets/js/localidades.json')
-    .then(response => response.json())
-    .then(data => {
-        provincias = data;
-        var selectorProvincias = document.getElementById("provincia");
-        // llenar el selector de provincias
-        for (var i = 0; i < provincias.length; i++) {
-          if (!selectorProvincias.contains(provincias[i].provincia)){
-            var opcion = document.createElement("option");
-            opcion.value = i;
-            opcion.text = provincias[i].provincia;
-            selectorProvincias.add(opcion);
-          }
-        }
-        
-      //  actualizarLocalidades();
-    });
-    */
-
-
-// función para actualizar el selector de localidades según la provincia seleccionada
+  
+//función para actualizar el selector de localidades según la provincia seleccionada
 function actualizarLocalidades() {
-  var selectorLocalidades = document.getElementById("localidad");
-  selectorLocalidades.innerHTML = "";
-  var provinciaSeleccionada = document.getElementById("provincia").options[provincia.selectedIndex].text;
-  for (var i = 0; i < localidades.length; i++) {
+  let selectorLocalidades = document.getElementById("localidad");
+  selectorLocalidades.innerHTML = ""; //se vacía el selector de localidades
+  let provinciaSeleccionada = document.getElementById("provincia").options[provincia.selectedIndex].text;
+  
+  //se recorre la constante 'localidades', si la provincia de la localidad actual
+  //coincide con la provincia seleccionada se agrega al selector de localidades
+  for (let i = 0; i < localidades.length; i++) {
     if (localidades[i].provincia == provinciaSeleccionada){
-      var opcion = document.createElement("option");
+      let opcion = document.createElement("option");
       opcion.value=i;
       opcion.latitud = localidades[i].locLatitud;
-      opcion.longitud = localidades[i].locLongitud;
-      //opcion.id = localidades[i].provincia;
+      opcion.longitud = localidades[i].locLongitud;     
       opcion.text = localidades[i].nombre;
       selectorLocalidades.add(opcion);   
-    }
-  
+    }  
   }
-
-
 }
 
-/*
-function obtenerCoordenadas(){
-
-  fetch('https://us1.locationiq.com/v1/search.php')
-    .then(response => response.json())
-    .then(data => {
-        provincias = data;
-        var selectorProvincias = document.getElementById("provincia");
-        // llenar el selector de provincias
-        for (var i = 0; i < provincias.length; i++) {
-          if (!selectorProvincias.contains(provincias[i].provincia)){
-            var opcion = document.createElement("option");
-            opcion.value = i;
-            opcion.text = provincias[i].provincia;
-            selectorProvincias.add(opcion);
-          }
-        }
-        
-      //  actualizarLocalidades();
-    });
-
-  var locationIQToken = 'pk.9a36088dd6ae4273fc4cf6d2fe7a7ab1'; // include 'pk.' heading as well
-  var encodedAddress = encodeURI("Avellaneda 681 bahia blanca");
-  var URL = 'https://us1.locationiq.com/v1/search.php?key=' + locationIQToken + '&q=' + encodedAddress + '&format=json';
-  var method = 'GET';
-  kintone.proxy(URL, method, {}, {}, function(response) {
-    var response_array = JSON.parse(response);
-    // restaurant_GPS contains the GPS coordinates of the restaurant in [Latitude, Longitude] format
-    var restaurant_GPS = [parseFloat(response_array[0].lat), parseFloat(response_array[0].lon)];
-    var restaurant = L.marker(restaurant_GPS).addTo(map);
-    restaurant.bindPopup("", {autoClose: false}).openPopup();
-
-})
-}
-*/
-
+//función que posiciona el mapa según las coordenadas de la localidad seleccionada
 function buscarSucursales(){
 
-  var latitud = document.getElementById("localidad").options[localidad.selectedIndex].latitud;
-  var longitud = document.getElementById("localidad").options[localidad.selectedIndex].longitud;
+  let latitud = document.getElementById("localidad").options[localidad.selectedIndex].latitud;
+  let longitud = document.getElementById("localidad").options[localidad.selectedIndex].longitud;
 
   map.flyTo([latitud, longitud], 13);
   
 }
 
-
-
-// actualizar el selector de localidades al cambiar la provincia seleccionada
+// actualiza el selector de localidades al cambiar la provincia seleccionada
 document.getElementById("provincia").addEventListener("change", actualizarLocalidades);
