@@ -589,14 +589,14 @@ margin: 0 10px;
 
 
 .contenedor .contenedorwrapper .slider-wrapper .slider-item{
-   box-shadow: 5px 5px 5px black;
+   box-shadow: 5px 5px 5px #02577a;
     flex: 0 0 auto;
    padding: 0 0 20px 0;
    height:410px;
    /* flex-wrap: wrap; */
    justify-content: space-around;
    align-items: center;
-   border: 1px solid #02577a;
+   /* border: 0,5px solid #02577a;  */
    border-radius: 5%;
    width: 255px;
    box-sizing: border-box;
@@ -670,6 +670,7 @@ background-color: #3b5999;
 }
 
 .redes-container{
+  padding: 10px 0 0 0 ;
   display: flex;
   /* height: 100vh; */
   align-items: center;
