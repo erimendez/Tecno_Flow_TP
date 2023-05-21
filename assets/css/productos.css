@@ -38,14 +38,20 @@ body{
     text-align: center;
     font-size: 25px;
 }
-.celus .containerflex a{
-    background-color: #2bc1cc;
+.container .containerflex a{
+    background-color:#02a9f7;
     color: rgba(0,0,0,1);
     border-radius: 111px;
     padding: 10px 15px;
-  
- 
+}
+
+ .container .containerflex img{
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    font-size: 25px;
  }
+ 
 .container #sgs22{
     display: none;
   
