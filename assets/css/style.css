@@ -88,6 +88,7 @@ body{
 .header .texto{
   display: flex;
   justify-content: center;
+  padding: 0 10px 0 0 ;
 }
 
 .contenedorbuscador{
@@ -102,9 +103,9 @@ body{
 }
 .contenedorbuscador .buscador input{
   
-    background: rgb(6, 31, 78);
-    box-shadow: inset 1px 1px 1px white;
-    color: white;
+    background: white;
+    box-shadow: inset 1px 1px 1px #01303f ;
+    color: #01303f;
     border: none;
     padding: 12px 40px 12px 6px ;
     width: 25vw;
