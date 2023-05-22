@@ -57,6 +57,7 @@ body{
 }
 
 
+
 /*------------------------*/
 /* Elementos del <header> */
 /*------------------------*/
@@ -68,7 +69,7 @@ body{
   flex-wrap:wrap;
 }
 
-.header, .texto, h1{
+.header .texto h1{
 
   font-family: 'Roboto', sans-serif;
   font-style: italic;
@@ -261,9 +262,9 @@ nav ul li ul a:hover{
 /*------------------------*/
 .titulo{
   font-family: 'Roboto', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-style:normal;
-  color: var(--instagram);
+  color:#0074c7;
   text-align: center;
 }
 

@@ -176,7 +176,7 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var iconoMapa = new L.Icon({
-  iconUrl: './assets/media\\img/tecnoflow(2).png',
+  iconUrl: './assets/media\\img/logonuevo3.png',
   iconSize: [32, 32],
   iconAnchor: [25, 25]  //punto del icono que corresponde a la ubicación del marcador.
 });
