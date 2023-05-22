@@ -17,8 +17,8 @@ header nav  ul  li  a{
     background-color:#02577a;
     font-weight: 400;
     border-radius: 3%;
-    padding: 20px;
-    margin: 5%;
+    padding: 0px 20px 10px 20px;
+    margin: 20px;
 }
 
 input{
