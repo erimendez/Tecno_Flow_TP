@@ -10,6 +10,7 @@
     background-color: #00c4f5;
 }
 
+
 .popupSucursal h3{    
     
     font: white; 
@@ -35,17 +36,6 @@
   justify-content: space-between;  
 }
       
-button{
-  background-color: blue;
-  font-size: 16px;
-  border: none;
-  color: white;
-  padding: 8px 16px; 
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-
 .form-group{
   display:flex;
   width:100%;
@@ -54,5 +44,19 @@ button{
 
 .form-group label{ 
   padding: 5px;
+}
+
+.button{
+  background-color: #55acee;
+  font-size: 16px;
+  border: none;
+  color: white;
+  padding: 8px 16px; 
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#listadoSucursales{
+  text-align: center;
 }
 

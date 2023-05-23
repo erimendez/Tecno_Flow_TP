@@ -18,6 +18,18 @@
   
 
 }
+/*--------------------------------------*/
+/* Elementos de la pagina gracias.html */
+/*-------------------------------------*/
+
+h1{
+  text-align:center;
+}
+
+/*--------------------------------------*/
+/* Fin Elementos de la pagina gracias.html */
+/*-------------------------------------*/
+
 
 
 .contenedor{
@@ -52,7 +64,7 @@ body{
 .header{
   align-items: center;
   justify-content:center;
-  background-color:#02577a;
+  background-color:#d4f0fc;
   display: flex;
   flex-wrap:wrap;
 }
@@ -64,8 +76,8 @@ body{
   font-size: 30px;
   color: #02a9f7;
 
-
 }
+
 .header .logo img{
   width: 450px;
   height: 150px;
@@ -76,6 +88,7 @@ body{
 .header .texto{
   display: flex;
   justify-content: center;
+  padding: 0 10px 0 0 ;
 }
 
 .contenedorbuscador{
@@ -90,27 +103,30 @@ body{
 }
 .contenedorbuscador .buscador input{
   
-    background: rgb(6, 31, 78);
-    box-shadow: inset 1px 1px 1px white;
-    color: white;
+    background: white;
+    box-shadow: inset 1px 1px 1px #01303f ;
+    color: #01303f;
     border: none;
-    padding: 6px 40px 6px 6px ;
+    padding: 12px 40px 12px 6px ;
     width: 25vw;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
 }
 
 .contenedorbuscador .lupa{
-  padding: 5px;
-  border: 1px solid green;
+  padding: 10px;
   cursor: pointer;
   margin: 10px;
-  box-shadow: inset 1px 1px 1px rgb(127, 241, 127);
+  box-shadow: inset 1px 1px 1px #02a9f7;
+  -webkit-border-radius:  5px;
+    -moz-border-radius: 5px;
 }
 
 /* -------------------*/
 /*   ICONNOS LINDOS   */
 /* -------------------*/
  #compra, #login{
-  color:white;
+  color:#01303f;
   padding: 0 5px 0 5px;
   transition: all 400ms ease;
  }
@@ -240,6 +256,17 @@ nav ul li ul a:hover{
   padding-left: 30px;
   font-size: 14px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/*------------------------*/
+/* Título principal de cada página */
+/*------------------------*/
+.titulo{
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-style:normal;
+  color:#0074c7;
+  text-align: center;
 }
 
 
@@ -543,7 +570,7 @@ margin: 0 10px;
 }
 
 .contenedor .contenedorwrapper .slider-wrapper .slider-item a{
-  background-color: #2bc1cc;
+  background-color: #02a9f7;
   color: rgba(0,0,0,1);
   border-radius: 111px;
   padding: 10px 15px;
@@ -574,14 +601,14 @@ margin: 0 10px;
 
 
 .contenedor .contenedorwrapper .slider-wrapper .slider-item{
-   box-shadow: 5px 5px 5px black;
+   box-shadow: 5px 5px 5px #02577a;
     flex: 0 0 auto;
    padding: 0 0 20px 0;
    height:410px;
    /* flex-wrap: wrap; */
    justify-content: space-around;
    align-items: center;
-   border: 1px solid #02577a;
+   /* border: 0,5px solid #02577a;  */
    border-radius: 5%;
    width: 255px;
    box-sizing: border-box;
@@ -655,10 +682,12 @@ background-color: #3b5999;
 }
 
 .redes-container{
+  padding: 10px 0 0 0 ;
   display: flex;
   /* height: 100vh; */
   align-items: center;
   justify-content: center;
+  background-color: #d4f0fc;
 }
 
 .redes-container ul li{
