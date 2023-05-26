@@ -9,12 +9,13 @@
     padding-bottom: 100px;
     
   }
+
   h1{
     color: #195f88;
   }
   
   .questions_padding{
-    padding: 0;
+    margin: 20px;
     border: 1px solid #02A9F7;
     border-radius: 6px;
   }
@@ -23,12 +24,12 @@
     padding: 0 30px 0;
     
   }
-
  
   .questions_title{
     display: flex;
-    font-size: 20px;
-    padding: 30px 0 30px;
+    justify-content: center;
+    font-size: 28px;
+    padding: 30px 0 10px;
     cursor: pointer;
     font-family:'Roboto' sans-serif;
     color: #195f88;
@@ -46,8 +47,9 @@
   }
   
   .questions_show{
-    text-align: left;
+    text-align: justify;
     font-family: 'DM Sans' sans-serif;
+    font-size: 25px;
     color: #195f88;
   }
   
@@ -55,17 +57,93 @@
     display: block;
     width: 25px;
     height: 25px;
-  }
-  
+  }  
   
   .prop_img{
     height:300px;
-    width: 50%;
-    padding: 0 50px 0;
-  
+    width: auto;
+    margin: 0 50px 0;  
   }
 
-.paragraph{
-  color: #195f88;
-}
+  .paragraph{
+    color: #195f88;
+  }
   
+/*-----------------------------------*/
+/* Media queries para responsividad de
+/* la página Preguntas Frecuentes
+/* para 3 puntos de corte 
+/*-----------------------------------*/
+
+@media screen and (max-width:479px) {
+  .titulo{
+    font-size: 25px;
+  }
+
+  .prop_img {
+    width: 90%;
+    height: auto;
+    margin: 0;
+  }
+
+  .questions_padding {
+    margin: 15px; 
+  }
+
+  .questions_title{
+    padding: 10px 0 10px;
+    font-size: 18px;    
+  }
+
+  .questions_show{
+    font-size: 16px;
+  }
+
+  .questions_container{
+    padding-bottom: 50px;
+  }
+
+}
+
+@media screen and (min-width:480px) and (max-width:767px){
+  .prop_img {
+    width: 90%;
+    height: auto;
+    margin: 0;
+  }
+
+  .questions_title{
+    padding: 10px 0 10px;
+    font-size: 18px;    
+  }
+
+  .questions_show{
+    font-size: 16px;
+  }
+
+  .questions_container{
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width:768px){ 
+  .prop_img {   
+    margin: 0;
+    height: 500px;
+    width: auto;
+  }
+
+  .questions_title{
+    padding: 10px 0 10px;
+    font-size: 20px;    
+  }
+
+  .questions_show{
+    font-size: 18px;
+  }
+
+  .questions_container{
+    padding-bottom: 50px;
+  }
+
+}

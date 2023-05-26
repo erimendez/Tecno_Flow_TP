@@ -1,7 +1,7 @@
 //Se crea una funcion dnd recibe como argumentos las tags del DOM, para trasladarlas dnd se ejecute el script ( para no repetir el codigo)
 function traerhtml(selector, pagina){
     
-    const nav = document.querySelector(selector)
+    const nav = document.querySelector(selector);
     fetch(pagina)
     .then(res=>res.text())
     .then(data=>{
