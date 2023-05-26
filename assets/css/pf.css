@@ -60,9 +60,8 @@
   }  
   
   .prop_img{
-    height:300px;
-    width: auto;
-    margin: 0 50px 0;  
+    height:auto;
+    width: 80%;
   }
 
   .paragraph{
@@ -72,7 +71,7 @@
 /*-----------------------------------*/
 /* Media queries para responsividad de
 /* la página Preguntas Frecuentes
-/* para 3 puntos de corte 
+/* para 4 puntos de corte 
 /*-----------------------------------*/
 
 @media screen and (max-width:479px) {
@@ -81,7 +80,7 @@
   }
 
   .prop_img {
-    width: 90%;
+    width: 80%;
     height: auto;
     margin: 0;
   }
@@ -107,7 +106,7 @@
 
 @media screen and (min-width:480px) and (max-width:767px){
   .prop_img {
-    width: 90%;
+    width: 70%;
     height: auto;
     margin: 0;
   }
@@ -126,11 +125,10 @@
   }
 }
 
-@media screen and (min-width:768px){ 
+@media screen and (min-width:768px) and (max-width:1079px){
   .prop_img {   
-    margin: 0;
-    height: 500px;
-    width: auto;
+    width: 70%;
+    height: auto;    
   }
 
   .questions_title{
@@ -144,6 +142,22 @@
 
   .questions_container{
     padding-bottom: 50px;
+  }
+
+}
+
+@media screen and (min-width:1080px) {
+  .questions_title{    
+    font-size: 30px;    
+  }
+
+  .questions_show{
+    font-size: 28px;
+  }
+
+  .paragraph {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
   }
 
 }
