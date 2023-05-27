@@ -671,7 +671,7 @@ background-color: #3b5999;
 /*-----------------------------------*/
 /* Media queries para responsividad de
 /* elementos del header y footer
-/* para 3 puntos de corte
+/* para 4 puntos de corte
 /*-----------------------------------*/
 
 @media screen and (max-width:479px) {
@@ -849,7 +849,7 @@ background-color: #3b5999;
 
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width:1079px){
  
   .container_menu {
     width: 100%;
@@ -888,5 +888,33 @@ background-color: #3b5999;
  
 }
 
+@media screen and (min-width:1080px){
+  .menu{
+    align-items: center;
+  }
+
+  .logo {
+    width: 200px;   
+    padding: 20px 0 20px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container_menu {
+    padding: 0px;
+  }
+
+  nav ul li {   
+    padding: 0 20px 0 20px;
+  }
+
+  .redes-container ul{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 15px 0 0 0;
+  }
+
+}
 
 
