@@ -1,11 +1,6 @@
 :root{
   margin: 0;
   padding: 0;
-  
-  --color1: red;
-  --color2: blue;
-  --color3: pink;
-  --color4: orange;
   --facebook:  #3b5999;
   --instagram: #e4405f;
   --twitter: #55acee;
@@ -661,6 +656,8 @@ background-color: #3b5999;
 }
 .paragraph{
   text-align: center;
+  font-size: 18px;
+  font-family: 'DM Sans', sans-serif;
 }
 
 /*--------------------------------*/
