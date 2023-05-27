@@ -1,5 +1,7 @@
+/* https://sheetdb.io/api/v1/9xcesdscnhc8z */
+// const apiUrl = './assets/js/db.json';
 
-const apiUrl = './assets/js/db.json';
+const apiUrl = 'https://sheetdb.io/api/v1/9xcesdscnhc8z';
 
 fetch(`${apiUrl}`)
   .then(response => {
