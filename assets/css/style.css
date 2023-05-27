@@ -863,9 +863,9 @@ background-color: #3b5999;
   }
 
   .logo{
-    width: 40%;
+    
     text-align: end;
-    padding: 0 20px 0 0;
+    
   }
 
   .header .logo img {  
@@ -873,10 +873,10 @@ background-color: #3b5999;
   }
 
 .header .texto{
-    width: 50%;
+   
     text-align: start;
     justify-content: start;
-    padding: 0px 0 0 20px;
+    
   } 
 
   .redes-container ul{
