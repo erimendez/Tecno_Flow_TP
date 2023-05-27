@@ -192,7 +192,7 @@ logo utilizado en el sitio web; íconos utilizados y favicon.
 
 ## Integrantes del proyecto y detalle del trabajo realizado
 
->"Individualmente somos una gota, juntos somos una océano"
+>"Individualmente somos una gota, juntos somos un océano"
 
 - En general el aporte de todos para buscar info, imagenes y correciones en general, tips a lo largo del proyecto.
 - Aprendimos a trabajar con GitHub en equipo.
