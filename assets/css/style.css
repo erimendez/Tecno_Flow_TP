@@ -893,19 +893,26 @@ background-color: #3b5999;
     align-items: center;
   }
 
-  .redes-container ul{
+  .logo {
+    width: 200px;   
+    padding: 20px 0 20px 20px;
     display: flex;
     justify-content: center;
-    margin:0px;
-    padding: 15px 0 0 0;
   }
-
+  
   .container_menu {
     padding: 0px;
   }
 
   nav ul li {   
     padding: 0 20px 0 20px;
+  }
+
+  .redes-container ul{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 15px 0 0 0;
   }
 
 }

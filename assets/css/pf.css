@@ -61,7 +61,7 @@
   
   .prop_img{
     height:auto;
-    width: 80%;
+    width: 50%;
   }
 
   .paragraph{
@@ -80,9 +80,7 @@
   }
 
   .prop_img {
-    width: 80%;
-    height: auto;
-    margin: 0;
+    width: 80%; 
   }
 
   .questions_padding {
@@ -106,9 +104,7 @@
 
 @media screen and (min-width:480px) and (max-width:767px){
   .prop_img {
-    width: 70%;
-    height: auto;
-    margin: 0;
+    width: 70%;   
   }
 
   .questions_title{
@@ -126,11 +122,7 @@
 }
 
 @media screen and (min-width:768px) and (max-width:1079px){
-  .prop_img {   
-    width: 70%;
-    height: auto;    
-  }
-
+  
   .questions_title{
     padding: 10px 0 10px;
     font-size: 20px;    
