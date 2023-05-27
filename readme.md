@@ -89,7 +89,8 @@ Carpeta que contiene las imagenes en formato png/jpg del sitio web.
 - *listadoSucursales.html*: Archivo que contiene el codigo html y estilo para la presentacion del archivo PDF.
 
 ## Dependencias y Bibliotecas
-## Compatibilidad y Requisitos [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) v5.1.0: Una biblioteca de CSS y JavaScript utilizada para el diseño y la interactividad especificamente para la pagina `contacto.html`.
+
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) v5.1.0: Una biblioteca de CSS y JavaScript utilizada para el diseño y la interactividad especificamente para la pagina `contacto.html`.
 
 - [Leaflet API](https://leafletjs.com/download.html)Leaflet 1.9.4: Una biblioteca JavaScript de código abierto para mapas interactivos utilizada espeficamente en la pagina `sucurales.html`. 
 
