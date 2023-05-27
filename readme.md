@@ -6,23 +6,24 @@ Cuenta con varias paginas con diversos productos (celulares, notebooks, tablets,
 
 ## Estructura del proyecto
 - *index.html*: Página de inicio del sitio web.
-- *preg_Frec.html*:Página de las preguntas frecuentes.
-- *contacto.html*:Página de contacto con el cliente.
-- *gracias.html*:Página de agradecimiento por la compra.
-- *impresoras.html*:Página del producto impresora.
-- *monitores.html*:Página del producto monitor.
-- *note.html*:Página del producto notebook.
-- *productos.html*:Página del producto celular.
-- *sucursales.html*:Página de las sucursales del fisicas.
-- *tablets.html*:Página del producto tablet.
+- *preg_Frec.html*: Página de las preguntas frecuentes.
+- *contacto.html*: Página de contacto con el cliente.
+- *gracias.html*: Página de agradecimiento por la compra.
+- *impresoras.html*: Página del producto impresora.
+- *monitores.html*: Página del producto monitor.
+- *note.html*: Página del producto notebook.
+- *productos.html*: Página del producto celular.
+- *sucursales.html*: Página de las sucursales del fisicas.
+- *tablets.html*: Página del producto tablet.
+- *promociones.html*: Página de medios de pago.
 
-- *css/*:Carpeta que contiene los estilos del sitio web.
+- *css/*: Carpeta que contiene los estilos del sitio web.
 
-- *js/*:Carpeta que contiene los archivos javascript/jason del sitio web.
+- *js/*: Carpeta que contiene los archivos javascript/jason del sitio web.
 
-- *pages/*:Carpeta que contiene paginas html anexas del sitio web.
+- *pages/*: Carpeta que contiene paginas html anexas del sitio web.
 
-- *media*:Carpeta que contiene archivos visuales para el sitio web.
+- *media*: Carpeta que contiene archivos visuales para el sitio web.
 
 
 ## Archivo `index.html`
@@ -53,7 +54,11 @@ Este archivo contiene infomacion sobre los celulares en venta, ademas de sus des
 Este archivo contiene informacion y ubicacion fisica de las sucursales de la empresa en cuestion.
 
 ## Archivo `tablets.html`
-Este archivo contiene infomacion sobre las tablets en venta, ademas de sus descripciones y sus valores comerciales correspondiente.
+Este archivo contiene infomacion sobre las tablets en venta, ademas de sus descripciones y sus valores comerciales 
+correspondiente.
+
+## Archivo `promociones.html`
+Este archivo contiene infomacion sobre las promociones vigentes en los medios de pagos correspondientes.
 
 ## Carpeta Css
 - *style.css*: Contiene los estilos generales del sitio web.
@@ -117,12 +122,14 @@ destinado para ello.
 - >Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o
 bien de Google Fonts o similar.
 
-- El iframe se utliza en la página `listadoSucursales.html`. Iconos de Fontwesome en la página `header.html` y `footer.html`. Fuentes estan aplicadas desde el estilo en la página `style.css` utilizando google fonts. 
+- El iframe se utliza en la página `listadoSucursales.html`y en la pagina `promociones.html`. 
+- Iconos de Fontwesome en la página `header.html` y `footer.html`. 
+- Fuentes estan aplicadas desde el estilo en la página `style.css` utilizando google fonts, en este caso particular :[Roboto]  (https://fonts.google.com/specimen/Roboto) y [DM Sans](https://fonts.google.com/specimen/DM+Sans?query=DM)
 
 - >Tener al menos una página totalmente responsive con 3 puntos de corte para 3
 tamaños de dispositivos distintos.
 
-- ???????
+- La página a la cual se le aplica responsividad es la `preg_Frec.html`; las siguientes medias queries `@media screen and (max-width:479px)` , `@media screen and (min-width:480px) and (max-width:767px)` y ` @media screen and (min-width:768px)`.
 
 - >Incorporar al menos una animación, transformación o una transición (se deberá
 indicar en qué parte del sitio web fue incorporada la animación).
@@ -173,12 +180,14 @@ logo utilizado en el sitio web; íconos utilizados y favicon.
 ## Nota Aclaratoria acerca del contenido en el sitio 
 
 - Los elementos a continuacion no poseen funcionalidad pero estan a modo de completar la visual del proyecto, todos ubicados en el `header.html`:
-    - Iconos de Usuario y carrito de compras.
+    - Iconos de Usuario e Icono de Carrito de Compras.
     - Barra de busqueda.
-    - Link a enlace a promociones.
+    
 
 
 ## Integrantes del proyecto
 
 - Erica Mendez (https://github.com/erimendez)
-- Por favor completen aca!!!!
+- Lorena Dominguez     (https://github.com/primerapruebagithub)
+- Manuel Saquilan (https://github.com/ManuelSaquilan)
+- Mirta Veron (https://github.com/mirtaveron)

@@ -872,12 +872,12 @@ background-color: #3b5999;
     width: auto;
   }
 
-  .header .texto{
+.header .texto{
     width: 50%;
     text-align: start;
     justify-content: start;
     padding: 0px 0 0 20px;
-  }
+  } 
 
   .redes-container ul{
     display: flex;
