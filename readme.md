@@ -99,6 +99,8 @@ Carpeta que contiene las imagenes en formato png/jpg del sitio web.
 ## API 
 - [Sheetdb.io API](https://sheetdb.io/) SheetDB es una herramienta que converte una hoja de cálculo de Google en una API JSON. Nos permite conectar con nuestra tabla que contiene los datos utilizados en el sitio web. Utilizada en la pagina `index.html`.
 
+- [API Formsubmit](https://formsubmit.co/) API Formsubmit herramienta para el envio de correo electronico desde el formulario de la la página `contacto.html`. 
+
 ## Compatibilidad y Requisitos
 - Navegadores compatibles: Google Chrome (última versión), Mozilla Firefox (última versión), Safari (última versión).
 
@@ -136,6 +138,8 @@ tamaños de dispositivos distintos.
 indicar en qué parte del sitio web fue incorporada la animación).
 
 - La animacion esta aplicada en la pagina `header.html` al icono "lupa", "compra" y "login" ![iconos](/assets/media/img/icono.png). Ademas tambien esta aplicada en el `footer.html` en los iconos de redes sociales ![iconos](/assets/media/img/icono2.png)
+  Ademas está incorporada en el navbar del `header.html`.
+  ![Menú animago](./assets/media/img/menuanimado.jpg)
 
 - >Poseer una estructura HTML maquetada con Flexbox y/o Grid.
 
@@ -186,9 +190,45 @@ logo utilizado en el sitio web; íconos utilizados y favicon.
     
 
 
-## Integrantes del proyecto
+## Integrantes del proyecto y detalle del trabajo realizado
+
+>"Individualmente somos una gota, juntos somos una océano"
+
+- En general el aporte de todos para buscar info, imagenes y correciones en general, tips a lo largo del proyecto.
+- Aprendimos a trabajar con GitHub en equipo.
+- Destacar la comunicación y el trabajo en equipo.
+
 
 - Erica Mendez (https://github.com/erimendez)
+    * Maquetacion y creacion de la paginas `index.html`, `productos.html`, `gracias.html`, `monitores.html`, `promociones.html`, `tablets.html`, `impresoras.html`. 
+    * Creacion y modificacion de estilo `style.css`, `productos.css`
+    * Conexion de Api Rest.
+    * Creacion de archivos Javascript `nav_footer.js`, `script.js`, `seccion.js`, `seccioncelus.js` y `slider.js`.
+    * Separacion del codigo en las paginas `header.html` y `footer.html` para poder repetirse en todas las demas paginas del sitio.
+    * Creacion del archivo Readme.md.
+    * Creacion de Logo, banner publicitario, tira de imagenes.
+    * Edicion de imagenes.
+
 - Lorena Dominguez     (https://github.com/primerapruebagithub)
+    * Maquetacion y creacion de las paginas `preg_Frec.html`, `note.html`y `footer.html`.
+    * Creacion y modificacion de estilo `pf.css` y `style.css`
+    * Creacion del Favicon.
+    * Eleccion de tipografia.
+    * Busqueda de imagenes para creacion de contenido. 
+    
 - Manuel Saquilan (https://github.com/ManuelSaquilan)
+    * Maquetacion y creacion de las paginas `contacto.html` y  `header.html`.
+    * Creacion y modificacion de estilo `style.css`.
+    * Creacion del archivo `contacto.js`.
+    * Creacion del menu "hamburguesa" y su responsividad. 
+    * Creacion de la funcionalidad y validacion para llenar el formulario de `contacto.html` y recibir un mail de respuesta. Utilizando Api Formsubmit.
+       
 - Mirta Veron (https://github.com/mirtaveron)
+    * Maquetacion y creacion de las paginas `sucursales.html`,  `listadoSucursales.html`.
+    * Creacion y modificacion de estilo `style.css`, `pf.css` y `sucursales.css`
+    * Creacion de los 3 puntos de corte de responsividad (media queries) solicitados en el trabajo practico. 
+    * Creacion del archivo `sucursales.js`. 
+    * Geolocalizacion de sucursales en la pagina `sucursales.html` utilizando api externa. 
+
+
+    
