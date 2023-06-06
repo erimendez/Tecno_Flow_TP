@@ -71,7 +71,7 @@
 /*-----------------------------------*/
 /* Media queries para responsividad de
 /* la página Preguntas Frecuentes
-/* para 4 puntos de corte 
+/* para 3 puntos de corte 
 /*-----------------------------------*/
 
 @media screen and (max-width:479px) {
@@ -102,26 +102,7 @@
 
 }
 
-@media screen and (min-width:480px) and (max-width:767px){
-  .prop_img {
-    width: 70%;   
-  }
-
-  .questions_title{
-    padding: 10px 0 10px;
-    font-size: 18px;    
-  }
-
-  .questions_show{
-    font-size: 16px;
-  }
-
-  .questions_container{
-    padding-bottom: 50px;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:1079px){
+@media screen and (min-width:480px) and (max-width:1079px){
   
   .questions_title{
     padding: 10px 0 10px;
