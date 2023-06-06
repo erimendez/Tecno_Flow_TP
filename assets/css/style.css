@@ -73,13 +73,11 @@ body{
 
 }
 
-.header .logo img{ 
-  /*  */
-/* }, .logo, img{ */
-  width: 450px;
+.header .logo img{  
+  /* width: 450px; */
   height: 150px;
   padding: 0.5rem;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 .header .texto{
@@ -668,7 +666,7 @@ background-color: #3b5999;
 /*-----------------------------------*/
 /* Media queries para responsividad de
 /* elementos del header y footer
-/* para 4 puntos de corte
+/* para 3 puntos de corte
 /*-----------------------------------*/
 
 @media screen and (max-width:479px) {
@@ -765,88 +763,7 @@ background-color: #3b5999;
 
 }
 
-@media screen and (min-width:480px) and (max-width:767px){
-  
-  .logo{
-    width: 100%;
-    text-align: center;
-  }
-
-  .header .logo img {    
-    width: auto;
-  }
-
-  .header .texto{
-    width: 100%;    
-  }
-
-  .header{
-    width: 100%;
-    justify-content: space-evenly;
-  }
-  .contenedorheader {
-    display: flex;    
-    justify-content: center;
-    
-  }
-
-  .container_menu {    
-     padding: 0px; 
-  }
-
-  /* .header .logo img {
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  } */
-
-  .contenedorbuscador .buscador input {
-    width: 30vw;
-  }
-
-  /* PLACEHOLDER DEL BUSCADOR MULTILINEA */
-  #buscarproducto::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    white-space:pre-line;  
-    position:absolute;
-    padding: 0%;
-    margin: 0px;
-    top:5px;    
-  }
-
-  #buscarproducto::-moz-placeholder { /* Firefox 19+ */
-    white-space:pre-line;    
-  }  
- /****************************************/
-
-  .menu {
-    justify-content: center;
-  }
-
-  nav > ul {
-    height: auto;
-  }
-
-  nav > ul > li > a {
-    padding: 0px;
-    margin: 9px;  
-
-  }
-
-  .titulo {
-    font-size: 28px;
-  }
-
-  .redes-container ul{
-    display: flex;
-    justify-content: center;
-    margin:0px;
-    padding: 15px 0 0 0;
-  }
-
-}
-
-@media screen and (min-width:768px) and (max-width:1079px){
+@media screen and (min-width:480px) and (max-width:1079px){
  
   .container_menu {
     width: 100%;
@@ -869,12 +786,16 @@ background-color: #3b5999;
     width: auto;
   }
 
-.header .texto{
-   
-    text-align: start;
-    justify-content: start;
+  .header .texto{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
     
   } 
+
+  nav{
+    margin-left: -40px;
+  }
 
   .redes-container ul{
     display: flex;
