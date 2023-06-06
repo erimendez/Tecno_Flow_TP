@@ -787,14 +787,14 @@ background-color: #3b5999;
   }
 
   .header .texto{
-    width: 50%;
+    width: 45%;
     text-align: center;
-    justify-content: center;
+    justify-content: end;
     
   } 
 
   nav{
-    margin-left: -40px;
+    margin-left: -25px;
   }
 
   .redes-container ul{
