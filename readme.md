@@ -132,7 +132,7 @@ bien de Google Fonts o similar.
 - >Tener al menos una página totalmente responsive con 3 puntos de corte para 3
 tamaños de dispositivos distintos.
 
-- La página a la cual se le aplica responsividad para mejor visualizacion del contenido del sitio web contemplando diferentes dispositivos, es la `preg_Frec.html`. Se les aplica las siguientes medias queries en el archivo `style.css` y `pf.css`; `@media screen and (max-width:479px)` , `@media screen and (min-width:480px) and (max-width:767px)` , ` @media screen and (min-width:768px)`y `@media screen and (min-width:1080px)` .
+- La página a la cual se le aplica responsividad para mejor visualizacion del contenido del sitio web contemplando diferentes dispositivos, es la `preg_Frec.html`. Se les aplica las siguientes medias queries en el archivo `style.css` y `pf.css`; `@media screen and (max-width:479px)` , `@media screen and (min-width:480px) and (max-width:767px)` , y `@media screen and (min-width:1080px)` .
 
 - >Incorporar al menos una animación, transformación o una transición (se deberá
 indicar en qué parte del sitio web fue incorporada la animación).
